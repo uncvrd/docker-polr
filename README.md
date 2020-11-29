@@ -9,7 +9,7 @@ Usage
 -----
 Start the Docker container:
 
-    docker run -p 80:80 \
+    docker run -p 8080:8080 \
         -e "DB_HOST=localhost" \
         -e "DB_DATABASE=polr" \
         -e "DB_USERNAME=polr" \
