@@ -4,6 +4,14 @@ FROM alpine:3.12
 LABEL Maintainer="Aurélien JANVIER <dev@ajanvier.fr>" \
       Description="Unofficial Docker image for Polr."
 
+# Environment variables
+ENV APP_NAME My Polr
+ENV APP_PROTOCOL https://
+ENV DB_PORT 3306
+ENV DB_DATABASE polr
+ENV DB_USERNAME polr
+ENV POLR_BASE 62
+
 # Install packages and remove default server definition
 RUN apk --no-cache add bash git php7 php7-fpm php7-opcache php7-mysqli php7-json php7-openssl php7-curl \
         php7-zlib php7-xml php-xmlwriter php7-phar php7-intl php7-dom php7-xmlreader php7-ctype php7-session \
