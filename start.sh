@@ -1,6 +1,6 @@
 #!/bin/sh
 
-cd /src
+cd /var/www/html
 if [ ! -f ".env" ]; then
     POLR_GENERATED_AT=`date +"%B %d, %Y"`
     export POLR_GENERATED_AT
@@ -25,4 +25,5 @@ if [ ! -f "database/seeds/AdminSeeder.php" ]; then
     php artisan db:seed --class=AdminSeeder --force
 fi
 
+# Let supervisord start nginx & php-fpm
 /usr/bin/supervisord -c /etc/supervisor/conf.d/supervisord.conf
