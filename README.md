@@ -1,7 +1,9 @@
 Polr on Alpine Linux with Docker
 ==============================================
-![Docker Build Status](https://img.shields.io/docker/build/ajanvier/polr.svg)
-![Docker Image Size](https://img.shields.io/microbadger/image-size/ajanvier/polr.svg)
+![Docker Build Status](https://img.shields.io/docker/cloud/build/ajanvier/polr)
+![Docker Image Size](https://img.shields.io/microbadger/image-size/ajanvier/polr)
+![Docker Pulls](https://img.shields.io/docker/pulls/ajanvier/polr)
+![Docker Latest Version](https://img.shields.io/docker/v/ajanvier/polr?sort=semver)
 
 A Docker image for [Polr](https://github.com/cydrobolt/polr).
 
